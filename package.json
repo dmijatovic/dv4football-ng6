@@ -9,8 +9,6 @@
     "prod": "ng serve -c=production",
     "build": "ng build -c=production",
     "deploy": "firebase deploy",
-    "functions": "sudo firebase serve --only functions",
-    "deploy:functions": "sudo firebase deploy --only functions",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
