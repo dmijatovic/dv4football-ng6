@@ -1,0 +1,18 @@
+<div class="dropdown"
+  [class.active]="active">
+  <div class="dropbtn-frame">
+    <button class="dropbtn"
+      (click)="toggleMenu()">
+      <i class="material-icons">
+        {{matIco}}
+      </i>
+    </button>
+  </div>
+  <div class="dropdown-content right">
+    <a *ngFor="let item of menuItems"
+      (click)="toggleMenu()"
+      [routerLink]="item.url">
+        {{item.label}}
+    </a>
+  </div>
+</div>

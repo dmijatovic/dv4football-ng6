@@ -1,0 +1,28 @@
+
+@import '../../../styles/variables';
+
+:host{
+  display:block;
+}
+
+@media only screen and (max-width:1024px){
+  display:block;
+}
+
+
+.mat-button{
+  color: $primary-color-contrast;
+  border-bottom: 2px solid $primary-color;
+
+  .material-icons{
+    color: $accent-color;
+  }
+}
+
+.mat-button.active{
+  border-bottom: 2px solid $primary-color-contrast;
+}
+
+.btn-ico{
+  height: 24px;
+}

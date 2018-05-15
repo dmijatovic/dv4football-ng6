@@ -1,0 +1,16 @@
+
+
+<button *ngFor="let item of menuItems"
+  mat-button
+  [routerLink]="item.url"
+  routerLinkActive="active">
+  <i *ngIf="item.matIco"
+    class="material-icons">{{item.matIco}}</i>
+  <img *ngIf="item.img"
+    class="btn-ico" [src]="item.img" />
+  <span class="nav-btn-label">
+    {{item.label}}
+  </span>
+</button>
+
+

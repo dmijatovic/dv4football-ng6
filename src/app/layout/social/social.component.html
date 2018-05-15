@@ -1,0 +1,16 @@
+
+<section class="social-media-links">
+
+  <div class="social-media-title">{{ title }}</div>
+
+  <div *ngFor="let item of socialMedia"
+    class="social-media-item">
+
+    <a [href]="item.url"
+      target="_new">
+      <i [class]="item.faIco"></i>
+      <span>{{item.label}}</span>
+    </a>
+  </div>
+
+</section>

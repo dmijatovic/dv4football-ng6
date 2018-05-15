@@ -1,0 +1,36 @@
+
+@import '../../../styles/variables';
+
+:host{
+  display: block;
+  background-color: $footer-bg-color;
+  color: $footer-font-color;
+  padding: $padding-vh-lg;
+}
+
+.flex-row{
+  padding: $padding-v-md;
+  justify-content: space-between;
+}
+
+.flex-col{
+  justify-content: space-between;
+}
+
+
+.flex-row.center{
+  padding: $padding-v-md;
+  justify-content: center;
+}
+
+.app-footer-logo{
+  height: 70px;
+  width: 200px;
+}
+
+
+@media only screen and (max-width:1023px){
+  .app-footer-logo{
+    display: none;
+  }
+}

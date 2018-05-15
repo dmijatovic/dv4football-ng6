@@ -1,0 +1,24 @@
+
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.app-contact-info{
+  font-size: 0.8rem;
+}
+
+.app-contact-title{
+  padding-bottom: $padding-vh-md;
+  @include footerTitleUpper();
+}
+
+.app-contact-item{
+  padding: $padding-v-sm;
+  color: $footer-font-color;
+}
+
+a{
+  color: $footer-font-color;
+}
+i{
+  margin-right: $padding-vh-sm;
+}

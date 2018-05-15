@@ -1,0 +1,49 @@
+
+@import '../../../styles/variables';
+
+:host{
+  display: block;
+  background-color: $primary-color;
+  //-webkit-transition: height 2s ease-in-out;
+  //transition: height 0.25s ease-in-out;
+  //transition-delay: 1s;
+}
+
+.flex-row{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-logo{
+  height: 70px;
+}
+
+@media only screen and (max-width:1023px){
+  :host{
+    height: 60px;
+  }
+  .mobile{
+    display:block;
+  }
+  .desktop{
+    display:none;
+  }
+  .app-logo{
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width:1024px){
+  :host{
+    height:118px;
+  }
+  .mobile{
+    display:none;
+  }
+  .desktop{
+    display:block;
+  }
+  .container{
+    padding: $padding-v-lg;
+  }
+}

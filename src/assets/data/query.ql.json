@@ -1,0 +1,6 @@
+{
+  "test1":{
+    "query":"{competition(id:455){nextRound{count fixtures{date homeTeamName awayTeamName}}}}"
+  }
+}
+

@@ -1,0 +1,11 @@
+/*
+  PROJECT SPECIFIC MIXINS
+*/
+
+
+@mixin footerTitleUpper(){
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}

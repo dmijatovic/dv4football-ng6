@@ -1,0 +1,11 @@
+
+
+  <section class="app-logo-area"
+    [style.backgroundImage]="logo?.uri"
+    [style.backgroundSize]="logo?.fill">
+
+    <a *ngIf="logo?.url"
+      [href]="logo?.url">
+    </a>
+
+  </section>

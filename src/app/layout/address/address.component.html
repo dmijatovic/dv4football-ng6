@@ -1,0 +1,47 @@
+
+<section class="app-contact-info">
+
+  <div class="app-contact-title">{{ title }}</div>
+
+  <div *ngFor="let item of contactInfo"
+    class="app-contact-item"
+    [ngSwitch]="item.type">
+
+    <ng-container *ngSwitchCase="'text'">
+      <i [class]="item.faIco"></i>
+      <span class="contact-label">
+        {{item.label}}
+      </span>
+      <span class="contact-value">
+        {{item.value}}
+      </span>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'link'">
+      <a [href]="item.url"
+        target="_new">
+        <i [class]="item.faIco"></i>
+        <span class="contact-label">
+          {{item.label}}
+        </span>
+        <span class="contact-value">
+          {{item.value}}
+        </span>
+      </a>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'email'">
+      <a [href]="item.url">
+        <i [class]="item.faIco"></i>
+        <span class="contact-label">
+          {{item.label}}
+        </span>
+        <span class="contact-value">
+          {{item.value}}
+        </span>
+      </a>
+    </ng-container>
+
+  </div>
+
+</section>

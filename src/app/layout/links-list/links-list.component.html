@@ -1,0 +1,16 @@
+<section class="app-links-list">
+
+  <div class="app-links-title">{{title}}</div>
+
+  <div *ngFor="let item of links"
+    class="app-links-item">
+    <!--FA icon optional -->
+    <i *ngIf="item?.faIco"
+      [class]="item.faIco"></i>
+    <!-- link -->
+    <a [href]="item.url"
+      target="_new">{{item.label}}
+    </a>
+  </div>
+
+</section>

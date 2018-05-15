@@ -1,0 +1,24 @@
+
+
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.app-links-list{
+  font-size: 0.8rem;
+}
+
+.app-links-title{
+  padding-bottom: $padding-vh-md;
+  @include footerTitleUpper();
+}
+
+.app-links-item{
+  padding: $padding-v-sm;
+}
+
+a{
+  color: $grey-900-contrast;
+}
+i{
+  margin-right: $padding-vh-sm;
+}
